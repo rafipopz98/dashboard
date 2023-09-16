@@ -1,0 +1,68 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background-color: #211A75;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 10px; 
+    /* align-items: center; */
+    margin: 10px 15px;
+}
+.firstBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondBox{
+    display: flex;
+    text-align: justify;
+}
+.FourthBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.FourthBox img{
+    width: 35px;
+    height: 35px;
+    border-radius:50%;
+    object-fit: cover;
+    position: relative;
+}
+/* .FourthBox img:nth-child(1){
+    position: relative;
+} */
+.FourthBox img:nth-child(2){
+    position: relative;
+    left: -20px;
+}
+.FourthBox img:nth-child(3){
+    position: relative;
+    left: -40px;
+}
+.FourthBox img:nth-child(4){
+    position: relative;
+    left: -60px;
+}
+ .thirdBox .progress {
+	display: block;
+	margin-top: 24px;
+	height: 10px;
+	width: 100%;
+	border-radius: 10px;
+	background: var(--blue);
+	overflow-y: hidden;
+	position: relative;
+	margin-bottom: 4px;
+} 
+ .thirdBox .progress::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: orange;
+	width: 160px;
+}

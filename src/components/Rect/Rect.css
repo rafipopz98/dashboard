@@ -1,0 +1,133 @@
+.rect {
+    /* width: 100%; */
+    width: calc(100% - 20px);
+    background-color: #45fe;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.firstRect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    display: flex;
+    align-items: center;
+}
+.icin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.itemsDetails {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemsDetails img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.secondRect {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+.imgPara {
+    gap: 10px;
+}
+
+.imgPara p {
+    margin: 10px;
+}
+
+.imgalll img {
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imgalll img:nth-child(1) {
+    position: relative;
+}
+
+.imgalll img:nth-child(2) {
+    position: absolute;
+    left: 35px;
+}
+
+.imgalll img:nth-child(3) {
+    position: absolute;
+    left: 55px;
+}
+
+.imgalll img:nth-child(4) {
+    position: absolute;
+    left: 75px;
+}
+.invite{
+    width: 100px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+.btns .invite{
+    width: 150px;
+    padding: 10px;
+    /* background-color: red; */
+    background-color: #45ae;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid #45ff;
+}
+.icins{
+    margin-right: 5px;
+}
+.progress {
+	display: block;
+	margin-top: 24px;
+	height: 10px;
+	width: 150px;
+	border-radius: 10px;
+	background: var(--blue);
+	overflow-y: hidden;
+	position: relative;
+	margin-bottom: 4px;
+}
+.progress::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: yellow;
+	width: 60px;
+}

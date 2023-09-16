@@ -1,0 +1,18 @@
+.heading{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    padding: 6px;
+    background-color: #07051A;
+}
+.heading button{
+    display: flex;
+    align-items: center;
+    background-color: rebeccapurple;
+    padding: 4px 9px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
