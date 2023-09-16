@@ -7,16 +7,20 @@ import Sidebar from "@/components/Sidebar/page";
 import { useState } from "react";
 
 export default function Home() {
-  const [arr, setArray] = useState([]);
+  const [array, setArray] = useState([]);
+
+  const dragDropped = (e) => {
+    const type = e.dataTransfer.getData("type");
+    console.log(type)
+    setArray([...array, type]);
+    console.log(array)
+
+    console.log("droppedd");
+  };
+
   const draggingOver = (e) => {
     e.preventDefault();
     console.log("overinggggggggg");
-  };
-  const dragDropped = (e) => {
-    const type = e.dataTransfer.getData("type");
-    setArray(...arr, type);
-
-    console.log("droppedd");
   };
 
   return (
@@ -30,11 +34,15 @@ export default function Home() {
             <Heading>1</Heading>
             <Box />
           </div>
-          <div onDragOver={draggingOver} onDrop={dragDropped} className="todo">
+          <div onDragOver={draggingOver} onDrop={dragDropped} >
             <Heading>2</Heading>
-            {arr.map((item, index) => {
-              <div key={index}>{item}</div>;
-            })}
+            {
+              array.map((item,id)=>(
+                <div key={id} className="todo">
+                {item}
+                </div>
+              ))
+            }
           </div>
           <div className="todo">
             <Heading>3</Heading>
