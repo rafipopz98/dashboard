@@ -38,8 +38,8 @@ const dragStart=()=>{
           </div>
           <div className="secondBox">{item.desc}</div>
           <div className="thirdBox">
-            <span className="progress" data-value="60%"></span>
-            <span className="label" >{item.value}%</span>
+            <div className="progress" data-value="60%"></div>
+            <div className="label" >{item.value}%</div>
           </div>
           <div className="FourthBox">
             <div>

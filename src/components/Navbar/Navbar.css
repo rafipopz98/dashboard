@@ -165,18 +165,5 @@ nav .profile .profile-link a:hover {
         display: flex;
     }
 
-    .secondRect {
-        display: none;
-    }
-
-    .imgalll,
-    .imgPara,
-    .btns,
-    .invite {
-        display: none;
-    }
-
-    .firstRect>h2 {
-        display: none;
-    }
+    
 }

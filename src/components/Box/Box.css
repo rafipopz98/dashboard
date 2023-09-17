@@ -8,6 +8,8 @@
     border-radius: 10px; 
     /* align-items: center; */
     margin: 10px 15px;
+    height: max-content;
+    flex: 0 0 auto;
 }
 .firstBox {
     display: flex;

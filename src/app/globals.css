@@ -8,11 +8,196 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-.main {
-    width: calc(100% - 20px);
+.rectangle{
     display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 35, 44);
+    margin: 10px;
+    border-radius: 8px;
+    gap: 20px;
+    padding: 10px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+
+
+}
+.detailsName p{
+    font-size: 0.7rem;
+}
+.detailsNamepfp{
+    display: flex;
+    align-items: center;
     gap: 10px;
+}
+.detailsNamepfp img{
+    width: 45px;
+    height: 45px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+.detailsNamepfp p{
+    font-size: 0.8rem;
+}
+.row2{
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+    justify-content: space-around;
+}
+.r2first{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.imgEve img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imgEve img:nth-child(2){
+   position: relative;
+   right: 25px;
+}
+.imgEve img:nth-child(3){
+    position: relative;
+    right: 45px;
+ }
+
+ .imgEve img:nth-child(4){
+    position: relative;
+    right: 65px;
+ }
+ .threedots3{
+    display: none;
+ }
+ 
+
+.btnEve{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.btnEve .invite{
+    width: 110px;
+    position: relative;
+    padding: 10px;
+    background-color: #151137;
+    border-radius: 8px;
+    /* flex-wrap: wrap; */
+}
+.r2second{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.label {
+	font-size: 14px;
+	font-weight: 700;
+}
+.progress {
+	display: block;
+	margin-top: 24px;
+	height: 10px;
+	width: 150px;
+	border-radius: 10px;
+	background: var(--blue);
+	overflow-y: hidden;
+	position: relative;
+	margin-bottom: 4px;
+}
+.progress::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: yellow;
+	width: 60px;
+}
+.mainWindow{
+    /* width: 100%; */
+    height: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.leftCol{
+     width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 0;
+    display: flex;
+    /* align-items: center; */
+    overflow: hidden;
+    overflow-x: auto;
+}
+.leftCol::-webkit-scrollbar{
+   height: 0.5vh;
+   scroll-behavior: smooth;
+}
+
+.leftCol::-webkit-scrollbar-thumb{
+    background-color: white;
+    width: 1vw;
+    border-radius: 9px;
+}
+.leftCol::-webkit-scrollbar-track{
+    background-color: #555; 
+}
+@media screen and (max-width: 768px) {
+
+    .detailsNamepfp{
+        display: none;
+    }
+    .threedots3{
+        display: inline-block;
+        margin-left: 185px;
+        /* background-color: red; */
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+    }
+    .btnEve{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstone{
+        position: relative;
+        top: -50px;
+        left: 150px;
+        /* background-color: red; */
+    }
+    .secondone{
+        position: relative;
+        top: -50px;
+        left: 150px;
+    }
+    .thirdone{
+        position: relative;
+        top: -100px;
+    }
+    .fourthone{
+        position: relative;
+        top: -100px;
+        width: 290px;
+    }
+    .r2second{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+    
+
+    
+    
 }

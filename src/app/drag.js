@@ -1,6 +1,6 @@
 export default function lol(){
 
-    const todos=document.querySelectorAll('.todo')
+    const todos=document.querySelectorAll('.mainWindow')
 
     const box=document.querySelector('.box')
 
