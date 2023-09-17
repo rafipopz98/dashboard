@@ -108,7 +108,7 @@ const Sidebar = () => {
   return (
     <section id="sidebar">
       <a href="#" className="brand">
-        <i className="bx bx-menau icon"></i> weframetech
+        <i className="bx bxs-widget icon"></i> weframetech
       </a>
       <ul className="side-menu">
         <li className="divider" data-text="Main Menu">
