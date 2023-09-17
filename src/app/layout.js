@@ -15,7 +15,6 @@ export default function RootLayout({ children }) {
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
     </head>
       <body className={inter.className}>{children}</body>
-      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     </html>
   )
 }
