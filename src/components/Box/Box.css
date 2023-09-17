@@ -66,3 +66,6 @@
 	background: orange;
 	width: 160px;
 }
+.hovered{
+    border: 2px dashed black;
+}

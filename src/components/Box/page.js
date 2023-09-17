@@ -1,10 +1,10 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./Box.css";
 import { BsThreeDots } from "react-icons/bs";
+import lol from '../../app/drag'
 const Box = () => {
-  const dragItem = useRef();
-  const dragOverItem = useRef();
+
   const image =
     "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg";
 
@@ -18,22 +18,19 @@ const Box = () => {
       days: 10,
     },
   ]
+const dragStart=()=>{
+  lol();
+}
 
-  const dragstart=(e,type)=>{
-    e.dataTransfer.setData(e,"type")
-  }
-  const dragOver=()=>{
-    e.preventdefault();
-  }
   return (
     <>
       {tempData.map((item, id) => (
         <div
           key={id}
-          draggable
-          onDragStart={(e)=>dragstart(e,"1st")}
-          onDragOver={dragOver}
+          draggable="true"
+          onDragStart={(e)=>dragStart(e)}
           className="box"
+          style={{cursor:"move"}}
         >
           <div className="firstBox">
             <h5>{item.head}</h5>
