@@ -10,12 +10,12 @@ const Box = () => {
 
  
    const tempData=[ {
-      id: 1,
-      head: "important",
-      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet error minima accusamus quidem laboriosam tempor neque, ab, pariaturillo molestiae",
+      id: 1, 
+      head: "go to gym",
+      desc: "go to gym and work on abs Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, repudiandae?",
       value: 60,
-      image,
-      days: 10,
+      image, 
+      days: 2,
     },
   ]
 const dragStart=()=>{
@@ -39,7 +39,7 @@ const dragStart=()=>{
           <div className="secondBox">{item.desc}</div>
           <div className="thirdBox">
             <span className="progress" data-value="60%"></span>
-            <span className="label">{item.value}%</span>
+            <span className="label" >{item.value}%</span>
           </div>
           <div className="FourthBox">
             <div>
